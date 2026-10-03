@@ -8,22 +8,27 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
 
 .navbar {
     height: 55px;
     background-color: #131921;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 18px;
+    gap: 14px;
 }
 
 
-/* AMAZON LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
 
 .logo img {
     width: 95px;
     height: auto;
+    display: block;
 }
 
 .location {
@@ -53,14 +58,12 @@ body {
 }
 
 
-/* SEARCH BAR */
-
 .search-bar {
     display: flex;
     height: 40px;
-    width: 50%;
-    flex: none;
-    margin-left: 10px;
+    flex: 1;
+    min-width: 250px;
+    margin-left: 4px;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -106,9 +109,6 @@ body {
     stroke-linecap: round;
 }
 
-/* FOOTER */
-
-/* Sign in section */
 
 .signin-section {
     text-align: center;
@@ -141,8 +141,6 @@ body {
 }
 
 
-/* Back to top */
-
 .back-to-top {
     height: 50px;
     background-color: #37475a;
@@ -153,8 +151,6 @@ body {
     font-size: 13px;
 }
 
-
-/* Main footer */
 
 .footer {
     background-color: #232f3e;
@@ -179,9 +175,6 @@ body {
     color: #dddddd;
 }
 
-
-/* Bottom section */
-
 .footer-bottom {
     background-color: #232f3e;
     border-top: 1px solid #3a4553;
@@ -202,9 +195,6 @@ body {
     margin: 5px;
 }
 
-
-/* Copyright */
-
 .copyright {
     background-color: #131a22;
     color: white;
@@ -213,13 +203,9 @@ body {
     font-size: 12px;
 }
 
-/* SPACE BEFORE FOOTER */
-
 .back-to-top {
     margin-top: 1000px;
 }
-
-/* LANGUAGE */
 
 .language {
     display: flex;
@@ -227,7 +213,8 @@ body {
     gap: 5px;
     color: white;
     font-size: 14px;
-    margin-left: 15px;
+    margin-left: 6px;
+    flex-shrink: 0;
 }
 
 .language strong {
@@ -242,12 +229,15 @@ body {
 .returns {
     color: white;
     white-space: nowrap;
+    line-height: 1.1;
+    flex-shrink: 0;
 }
 
 .account small,
 .returns small {
     display: block;
-    font-size: 12px;
+    font-size: 11px;
+    margin-bottom: 2px;
 }
 
 .account strong,
@@ -259,32 +249,33 @@ body {
 .cart {
     display: flex;
     align-items: center;
+    gap: 3px;
     color: white;
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .cart-icon {
-    font-size: 28px;
+    font-size: 27px;
 }
 
 .cart strong {
     font-size: 14px;
 }
 
-/* SIDE MENU */
 
 .side-menu {
     width: 365px;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 55px);
     background-color: white;
     position: fixed;
-    top: 65px;
+    top: 55px;
     left: 0;
     z-index: 1000;
 }
 
 .side-menu-header {
-    height: 65px;
+    height: 64px;
     background-color: #232f3e;
     color: white;
     display: flex;
@@ -292,6 +283,7 @@ body {
     padding: 0 30px;
     gap: 12px;
     font-size: 20px;
+    line-height: 1.2;
 }
 
 .side-menu-header span {
@@ -310,18 +302,20 @@ body {
 .side-menu-content {
     padding: 20px 30px;
     overflow-y: auto;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 55px);
 }
 
 .side-menu-content h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin: 0 0 14px 0;
+    line-height: 1.3;
 }
 
 .side-menu-content p {
-    font-size: 14px;
+    font-size: 15px;
     margin: 0;
-    padding: 13px 0;
+    padding: 12px 0;
+    line-height: 1.4;
 }
 
 .side-menu-content p span {
